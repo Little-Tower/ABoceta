@@ -1,0 +1,72 @@
+.formulario{
+
+}
+
+.formulario label{
+ display: block;
+}
+
+.formulario input{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin-top: 10px;
+  width: 250px;
+  display: block;
+}
+
+.textarea{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 270px;
+  display: block;
+}
+
+.titulosN{
+  overflow-wrap: break-word;
+  text-align: left;
+  line-height: 1.68;
+  font-size: 30px;
+  color:  #1975C8;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 608px){
+  .titulosN{
+    text-align: center;
+  }
+
+  .formulario input{
+    width: 550px;
+  }
+
+  .textarea{
+    width: 570px;
+  }
+}
+
+
+@media only screen and (min-width: 864px){
+
+  .textarea{
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .formulario input{
+      font-size: 18px;
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 1500px){
+  .formulario input{
+    width: 850px;
+    margin-bottom: 22px;
+  }
+
+  .textarea{
+    width: 850px;
+  }
+}

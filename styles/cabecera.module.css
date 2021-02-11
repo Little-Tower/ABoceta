@@ -1,0 +1,148 @@
+
+/*Código para el banner superior de llamada*/
+.textoPre{
+    display: none;
+  }
+  
+  .lista{
+    display: none;
+  }
+  
+  .contactoCabecera{
+    margin-top: -30px;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background: #242424;
+    text-align: right;
+    opacity: .8;
+    -webkit-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    -moz-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+  }
+  
+  .contactoCabecera a{
+    margin-right: 18px;
+    padding-top: 12px;
+    vertical-align: middle;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 7px;
+  }
+  .contactoCabecera i{
+    margin-right: 5px;
+  }
+  /*FIN*/
+  
+  /*Botón del menú repositivo*/
+  .btnMenu{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    font-size: 22px;
+    color: #185795;
+  }
+  /*FIN*/
+  
+  /*Código para la barra superior de navegación.*/
+  .cabecera{
+    margin-top: 30px;
+    opacity: 1;
+    background: #f9f9f9;
+    width: 100%;
+    height: 70px;
+    -webkit-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    -moz-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+  }
+  
+  .cabecera nav{
+    margin-left: 15px;
+  }
+  
+  .cabecera nav ul{
+    margin-left: 40px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 20px;
+    list-style: none;
+  
+  }
+  
+  .cabecera nav ul li{
+    border-bottom: solid 1px #e3e3e3;
+    float: left;
+    margin-top: 35px;
+    margin-left: 30px
+  }
+  
+  .cabecera nav ul a{
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 0.5s linear;
+    color: #185795;
+    text-align: center;
+    text-decoration: none;
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+   -webkit-user-select: none; /* Chrome, Safari, and Opera */
+   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  }
+  
+  .cabecera nav ul a:focus{
+      color: #0E3358;
+  }
+  
+  .cabecera nav ul li:hover{
+    border-bottom: solid 1.8px #c2c2c2;
+    -webkit-box-shadow: 0px 4px 3px -3px rgba(235,235,235,1);
+    -moz-box-shadow: 0px 4px 3px -3px rgba(235,235,235,1);
+    box-shadow: 0px 4px 3px -3px rgba(235,235,235,1);
+  }
+  
+  .cabecera nav ul a:hover{
+      color: #1975C8;
+  }
+  
+  .cabecera nav a img{
+    margin-top: 10px;
+    float: left;
+    height: 45px;
+    width: 45px;
+  }
+  
+  @media only screen and (min-width: 1020px){
+    .btnMenu{
+      display: none;
+    }
+  
+   .textoPre{
+     display: inline;
+   }
+  
+   .lista{
+     display: inline;
+   }
+  
+    /*Código para la barra superior de navegación.*/
+    .cabecera{
+      height: 90px;
+    }
+  
+    .cabecera nav{
+      margin-left: 25px;
+    }
+  
+    .cabecera nav ul{
+      margin-left: 65px;
+    }
+  
+    .cabecera nav a img{
+      height: 70px;
+      width: 70px;
+    }
+  }
+  

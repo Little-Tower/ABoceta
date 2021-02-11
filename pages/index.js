@@ -1,65 +1,50 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import barra from '../styles/barra.module.css'
+import cuerpo from '../styles/cuerpo.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div >
+      <div className={cuerpo.cuerpo}>
+        <div className={barra.fundaBarra} >
+          <hr className={barra.barra} />
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <div className={cuerpo.articulo}>
+          
+          <h1>Elaboramos demandas y escritos de ejecución.</h1>
+          <p>Impulsando constantemente los procedimientos con obetenciónna
+          de informes de solvencia y averiguación patrimonial.</p>
+        </div>
+
+        <div className={barra.fundaBarra} >
+          <hr className={barra.barra} />
+        </div>
+
+        <div className={cuerpo.articulo}>
+          
+          <h1>Realizamos embargos, lanzamientos, subastas judiciales.</h1>
+          <p>Publicamos edictos y mandamientos en boletines oficiales y otros medios
+          de publicidad.</p>
+        </div>
+
+        <div className={barra.fundaBarra} >
+          <hr className={barra.barra} />
+        </div>
+        <div className={cuerpo.articulo}>
+          
+          <h1>Realizamos diligencias previas a la demanda y gestiones extrajudiciales.</h1>
+          <p>Ante organismo oficiales (Registro de la Propiedad, Registro Civil, organismos Públicos.
+            Hacienda, Delegación de Tráfico...)</p>
+        </div>
+
+        <div className={barra.fundaBarra} >
+          <hr className={barra.barra} />
+        </div>
+
+      </div>
+
     </div>
   )
 }

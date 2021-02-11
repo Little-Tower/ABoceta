@@ -1,0 +1,45 @@
+/*Panel desplegable*/
+.panel{
+    position: absolute;
+    font-size: 17px;
+    right: 0;
+    margin-top: 5px;
+    width: 70%;
+    height: 270px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    -moz-box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+    box-shadow: 0px 4px 3px -3px rgba(97,97,97,0.45);
+  }
+  /*FIN*/
+  
+  .panel li{
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    margin-bottom: 18px;
+  }
+  
+  .panel li a{
+    color: #185795;
+    text-decoration: none;
+  }
+  
+  .panel li a:hover{
+    border-bottom: solid 1.8px #c2c2c2;
+  }
+  
+  @media only screen and (min-width: 530px){
+    /*Panel desplegable*/
+    .panel{
+      font-size: 18px;
+      width: 65%;
+    }
+    /*FIN*/
+  
+    .panel li{
+      margin-left: 45px;
+    }
+  }
+  
