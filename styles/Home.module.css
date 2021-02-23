@@ -1,0 +1,65 @@
+.fotoHead{
+    width: 100%;
+    color: #fff;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("/header.png");
+    background-size: cover;
+    position: relative;
+}
+
+.fotoHead h1{
+    font-size: 45px;
+}
+
+.articulo{
+    text-align: center;
+    padding: 40px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.btnMas{
+    margin-top: 20px;
+    border: 2px solid #fff;
+    height:fit-content;
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btnMas:hover{
+    border: 2px solid #01172f;
+    color: #01172f;
+}
+
+.datos{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f2f2f2;
+}
+
+.imgDatos{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    max-width: 30%;
+}
+
+
+
+@media only screen and (min-width: 874px){
+    .articulo{
+      margin-bottom: 20px;
+    }
+  
+    .articulo p{
+      margin-top: 20px;
+      font-size: 23px;
+    }
+}
+  

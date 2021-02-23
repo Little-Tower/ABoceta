@@ -1,11 +1,13 @@
 import styles from '../styles/Enlaces.module.css'
-import cuerpo from '../styles/cuerpo.module.css'
-import barra from '../styles/barra.module.css'
+import Head from 'next/head'
 
 const Enlaces = () => {
     return (
         <div >
-            <div className={cuerpo.articulo}>
+            <Head>
+                <title>Enlaces | Procurador Antonio Boceta Díaz - Tu procurador en Sevilla.</title>
+            </Head>
+            <div className={styles.cuerpo}>
                 <p className={styles.titulos}>Enlaces:</p>
                 <div className={styles.caja}>
                     <a href="http://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/" target="_blank">Tribunal Supremo</a>
@@ -98,10 +100,6 @@ const Enlaces = () => {
                     <a href="https://www.juntadeandalucia.es/" target="_blank">Junta de Andalucía</a>
                 </div>
 
-            </div>
-
-            <div className={barra.fundaBarra}>
-                <hr className={barra.barra} />
             </div>
 
         </div>

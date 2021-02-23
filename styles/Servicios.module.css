@@ -1,5 +1,43 @@
+.cuerpo{
+    margin-bottom: 150px;
+}
+
+.titulo{
+    margin-left: 25px;
+    margin-top: 60px;
+    overflow-wrap: break-word;
+    text-align: left;
+    line-height: 1.68;
+    font-size: 25px;
+    color:  #1975C8;
+    margin-bottom: 30px;
+}
+.articulo{
+    max-width: 80%;
+  }
+  
+  .articulo p{
+    font-size: 15px;
+    text-align: justify;
+  }
+
 .txtServicios{
     margin-left: 35px;
     font-size: 18px;
-    color: grey;
+    color: rgb(37, 37, 37);
 }
+
+@media only screen and (min-width: 874px){
+    .titulo{
+        font-size: 30px;
+    }
+    .articulo{
+      margin-bottom: 150px;
+      margin: auto;
+    }
+  
+    .articulo p{
+      font-size: 22px;
+    }
+  }
+  

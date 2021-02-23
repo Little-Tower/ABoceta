@@ -6,14 +6,14 @@ const Navbar = () => {
     return (
         <div>
             <div className={cabecera.contactoCabecera}>
-                <a className={cabecera.textoPre} href="#">Contacte ahora con nosotros llamando al:</a><a href="tel:+34955902323"><i className="fas fa-phone"></i>955 90 23 23</a> <a href="mailto:procurador@boceta.net"> <i className="fas fa-envelope"></i>procurador@boceta.net</a>
+                <a className={cabecera.textoPre} href="#">Contacte ahora con nosotros llamando al:</a><a href="tel:+34955902323"><i>✆</i> 955 90 23 23</a> <a href="mailto:procurador@boceta.net"> <i>✉</i> procurador@boceta.net</a>
             </div>
 
             <div className={cabecera.cabecera}>
                 <nav>
                     <a href="#"><i className={styles.btnMenu} className="fas fa-align-justify"></i></a>
                     <ul>
-                        <a href="#"><img src="img/logoAB.png" alt="" /></a>
+                        <a href="#"><img src="/logoAB.png" alt="" /></a>
                         <Link href="/">
                             <li><a className={cabecera.lista} href="index.html">Inicio</a></li>
                         </Link>

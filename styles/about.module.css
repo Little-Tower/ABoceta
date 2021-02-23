@@ -1,0 +1,54 @@
+.cuerpo{
+    margin-bottom: 100px;
+}
+
+.titulos{
+  overflow-wrap: break-word;
+  text-align: left;
+  line-height: 1.68;
+  font-size: 30px;
+  color:  #1975C8;
+  margin-bottom: 30px;
+}
+
+.articulo{
+  padding: 40px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.articulo p{
+  font-size: 15px;
+  text-align: justify;
+}
+
+.descripcion{
+  float: left;
+  width: 60%;
+  left: 0;
+  margin-bottom: 70px;
+}
+
+.foto{
+  float: none;
+  margin-left:10px;
+  width: 500px;
+  height: 321px;
+  margin-top: 50px;
+}
+
+.foto2{
+  width: 75%;
+  height: 75%;
+}
+
+
+@media only screen and (min-width: 874px){
+  .articulo{
+    margin-bottom: 80px;
+  }
+
+  .articulo p{
+    font-size: 25px;
+  }
+}

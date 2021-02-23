@@ -1,5 +1,5 @@
 .formulario{
-
+  margin-bottom: 100px;
 }
 
 .formulario label{
@@ -7,46 +7,67 @@
 }
 
 .formulario input{
+  background-color: #eeeeee;
+  border: none;
+  padding: 20px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
   margin-top: 10px;
-  width: 250px;
   display: block;
 }
 
 .textarea{
+  background-color: #eeeeee;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 270px;
+  width: 100%;
+  border: none;
   display: block;
 }
 
 .titulosN{
+  margin-left: 25px;
+  margin-top: 60px;
   overflow-wrap: break-word;
   text-align: left;
   line-height: 1.68;
-  font-size: 30px;
+  font-size: 25px;
   color:  #1975C8;
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 608px){
-  .titulosN{
-    text-align: center;
-  }
-
-  .formulario input{
-    width: 550px;
-  }
-
-  .textarea{
-    width: 570px;
-  }
+.articulo{
+  max-width: 80%;
+  margin: auto;
 }
 
+.articulo p{
+  font-size: 15px;
+  text-align: justify;
+}
+
+.btnContacto{
+  border-radius: 2px;
+  border: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 50px;
+  height: 50px;
+  background: #1975C8;
+  font-size: 18px;
+  color: white;
+}
+
+@media only screen and (min-width: 608px){
+  .titulosN{
+    font-size: 30px;
+  }
+
+}
 
 @media only screen and (min-width: 864px){
 
@@ -56,17 +77,28 @@
   }
   .formulario input{
       font-size: 18px;
-    width: 550px;
+  }
+
+  .articulo{
+    margin-bottom: 10px;
+  }
+
+  .articulo p{
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 1500px){
   .formulario input{
-    width: 850px;
+    width: 80%;
     margin-bottom: 22px;
   }
 
   .textarea{
-    width: 850px;
+    width: 80%;
+  }
+
+  .btnContacto{
+    margin-top: 20px;
   }
 }

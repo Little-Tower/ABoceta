@@ -1,9 +1,13 @@
+.cuerpo{
+  margin-bottom: 100px;
+}
+
 .caja{
     background: #f9f9f9;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     transition: linear 0.3s;
     height: 60px;
     padding: 7px;
@@ -33,16 +37,19 @@
   
   .titulos{
     overflow-wrap: break-word;
-    text-align: left;
     line-height: 1.68;
     font-size: 30px;
     color:  #1975C8;
+    margin-top: 30px;
+    margin-left: 50px;
     margin-bottom: 30px;
   }
   
   @media only screen and (min-width: 608px){
     .titulos{
-      text-align: center;
+      margin-top: 30px;
+      margin-left: 150px;
+      margin-bottom: 30px;
     }
   }
   
