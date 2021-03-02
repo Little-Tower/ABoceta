@@ -11,7 +11,7 @@ const Footer = () => {
                 <br />
                 <p>Calle Aguabajo nº 4 Bajo B</p>
                 <p>41400 - Écija (Sevilla)</p>
-                <p>Teléfono: 955 90 23 23 - 607 518 579</p>
+                <p>Teléfono: 955 90 23 23  |  607 518 579</p>
             </div>
 
             <div className={styles.segundo}>
