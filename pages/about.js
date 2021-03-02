@@ -9,7 +9,7 @@ const About = () => {
             </Head>
             <div className={styles.cuerpo}>
                 <div className={styles.articulo}>
-                    <h1 className={styles.titulos}>Esto somos nosotros:</h1>
+                    <h1 className={styles.titulos}>Nuestro equipo:</h1>
                     <div className={styles.descripcion}>
 
                         <p>Contamos con un amplio equipo de profesionales que garantizan

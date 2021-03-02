@@ -11,8 +11,10 @@ export default function Home() {
       </Head>
       <div className={styles.cuerpo}>
         <div className={styles.fotoHead}>
-          <h1 className="font-weight-bold">Procurador Antonio Boceta Díaz</h1>
-          <h4>Tu procurador en la provincia de Sevilla</h4>
+          <div className="container-fluid text-center">
+            <h1 className="font-weight-bold">Procurador Antonio Boceta Díaz</h1>
+            <h4>Tu procurador en la provincia de Sevilla</h4>
+          </div>
           <Link href="servicios">
             <button className={`font-weight-bold ${styles.btnMas}`}>Descubra nuestros servicios</button>
           </Link>
@@ -27,12 +29,12 @@ export default function Home() {
               </div>
 
               <div className="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                <img className={styles.imgDatos} src="/eficacia.png"/>
+                <img className={styles.imgDatos} src="/eficacia.png" />
                 <h4>Eficacia</h4>
               </div>
 
               <div className="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                <img className={styles.imgDatos} src="/xp.png"/>
+                <img className={styles.imgDatos} src="/xp.png" />
                 <h4>Experiencia</h4>
               </div>
             </div>

@@ -1,49 +1,69 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import styles from '../styles/navbar.module.css'
 import cabecera from '../styles/cabecera.module.css'
 
 const Navbar = () => {
+    const [click, setClick] = useState(false)
+
+    const handlerClick = () => setClick(!click)
+
     return (
         <div>
             <div className={cabecera.contactoCabecera}>
                 <a className={cabecera.textoPre} href="#">Contacte ahora con nosotros llamando al:</a><a href="tel:+34955902323"><i>✆</i> 955 90 23 23</a> <a href="mailto:procurador@boceta.net"> <i>✉</i> procurador@boceta.net</a>
             </div>
-
             <div className={cabecera.cabecera}>
-                <nav>
-                    <a href="#"><i className={styles.btnMenu} className="fas fa-align-justify"></i></a>
+                <div className={cabecera.btnMenu}>
+                    <img src="/menu.svg" onClick={handlerClick} alt="Btn menu"/>
+                    <img src="/logoAB.png" alt="logo" />
+                </div>
+                <div className={cabecera.logoMenu}>
+                    <img src="/logoAB.png" alt="logo"/>
+                </div>
+                <nav className={styles.navbarXL}>
                     <ul>
-                        <a href="#"><img src="/logoAB.png" alt="" /></a>
                         <Link href="/">
-                            <li><a className={cabecera.lista} href="index.html">Inicio</a></li>
+                            <li onClick={handlerClick}><a >Inicio</a></li>
                         </Link>
                         <Link href="/servicios">
-                            <li><a className={cabecera.lista} href="servicios.html">Servicios</a></li>
+                            <li onClick={handlerClick}><a >Servicios</a></li>
                         </Link>
                         <Link href="/about">
-                            <li><a className={cabecera.lista} href="quienes_somos.html">¿Quienes somos?</a></li>
+                            <li onClick={handlerClick}><a >¿Quienes somos?</a></li>
                         </Link>
                         <Link href="enlaces">
-                            <li><a className={cabecera.lista} href="enlaces.html">Enlaces</a></li>
+                            <li onClick={handlerClick}><a >Enlaces</a></li>
                         </Link>
                         <Link href="/noticias">
-                            <li><a className={cabecera.lista} href="noticias.html">Noticias</a></li>
+                            <li onClick={handlerClick}><a >Noticias</a></li>
                         </Link>
                         <Link href="/contacto">
-                            <li><a className={cabecera.lista} href="contacto.html">Contacto</a></li>
+                            <li onClick={handlerClick}><a >Contacto</a></li>
                         </Link>
                     </ul>
                 </nav>
+                <div className={click ? styles.panel : styles.panelFuera}>
+                <Link href="/">
+                            <li onClick={handlerClick}><a >Inicio</a></li>
+                        </Link>
+                        <Link href="/servicios">
+                            <li onClick={handlerClick}><a >Servicios</a></li>
+                        </Link>
+                        <Link href="/about">
+                            <li onClick={handlerClick}><a >¿Quienes somos?</a></li>
+                        </Link>
+                        <Link href="enlaces">
+                            <li onClick={handlerClick}><a >Enlaces</a></li>
+                        </Link>
+                        <Link href="/noticias">
+                            <li onClick={handlerClick}><a >Noticias</a></li>
+                        </Link>
+                        <Link href="/contacto">
+                            <li onClick={handlerClick}><a >Contacto</a></li>
+                        </Link>
+                </div>
             </div>
-
-           {/*  <div className={styles.panel}>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="quienes_somos.html">¿Quienes somos?</a></li>
-                <li><a href="enlaces.html">Enlaces</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </div> */}
         </div>
     )
 }
