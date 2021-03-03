@@ -1,7 +1,7 @@
 .cuerpo{
-    height: 80vh;
-    padding: 50px;
-    margin-top: 50px;
+    height: 95vh;
+    padding: 20px;
+    margin-top: 30px;
     margin-bottom: 100px;
     background: linear-gradient(rgba(16,29,44, .45), rgba(16,29,44, .45)), url("/jgd.jpg");
     background-size: cover;
@@ -21,9 +21,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  height: 75vh;
   background-color: rgba(255, 255, 255, 0.856);
-  padding: 40px;
+  padding: 13px;
   max-width: 100%;
   margin: auto;
 }
@@ -34,7 +34,7 @@
 }
 
 .descripcion{
-  width: 90%;
+  width: 100%;
   left: 0;
   margin-bottom: 30px;
 }
@@ -46,13 +46,13 @@
 
 
 
-@media only screen and (min-width: 874px){
+@media only screen and (min-width: 674px){
   .cuerpo{
     height: 90vh;
   }
 
   .articulo{
-    height: 77vh;
+    height: 80vh;
   }
 
   .articulo p{
@@ -60,6 +60,7 @@
   }
 
   .descripcion{
+    padding: 40px;
     margin-bottom: 70px;
   }
   
